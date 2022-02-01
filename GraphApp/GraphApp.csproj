@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="edgeAdd.png" />
+    <None Remove="edgeRemove.png" />
+    <None Remove="move.png" />
+    <None Remove="nodeAdd.png" />
+    <None Remove="nodeRemove.png" />
+    <None Remove="nodeRemove1.png" />
+    <None Remove="nodeRemove2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmLight" Version="5.4.1.1" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="edgeAdd.png" />
+    <Resource Include="edgeRemove.png" />
+    <Resource Include="move.png" />
+    <Resource Include="nodeAdd.png" />
+    <Resource Include="nodeRemove.png" />
+  </ItemGroup>
+
+</Project>
